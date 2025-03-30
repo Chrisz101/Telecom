@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Southern Company Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h2 { margin-top: 40px; }
+    canvas { margin-top: 10px; }
+    .chart-container { width: 100%; max-width: 1000px; margin-bottom: 60px; }
+  </style>
+</head>
+<body>
+  <h1>📊 Southern Company Dashboard (Live MSSQL Data)</h1>
+
+  <div class="chart-container">
+    <h2>Top 10 Increases in % of Tickets (2024 vs 2023)</h2>
+    <canvas id="chartTopIncreases"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h2>Change in % of Tickets by Work Type (2024 vs 2023)</h2>
+    <canvas id="chartWorktypeChanges"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h2>Change in % of Tickets by Department (2024 vs 2023)</h2>
+    <canvas id="chartDepartmentChanges"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h2>Top 10 Departments Completing Work Before Scheduled Time</h2>
+    <canvas id="chartEarlyCompletion"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h2>YoY Change in Early Completion Efficiency by Department</h2>
+    <canvas id="chartEfficiencyChange"></canvas>
+  </div>
+
+  <script>
+    const createBarChart = async (url, canvasId, labelField, valueField, title, horizontal = true) => {
+      const response = await fetch(url);
+      const data = await response.json();
+
+      const labels = data.map(item => item[labelField]);
+      const values = data.map(item => item[valueField]);
+
+      const ctx = document.getElementById(canvasId).getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: title,
+            data: values,
+            backgroundColor: values.map((_, i) => `hsl(${i * 20}, 70%, 60%)`),
+          }]
+        },
+        options: {
+          indexAxis: horizontal ? 'y' : 'x',
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            title: {
+              display: false,
+              text: title
+            }
+          },
+          scales: {
+            x: { beginAtZero: true, title: { display: true, text: horizontal ? 'YoY Change (%)' : '' } },
+            y: { title: { display: true, text: horizontal ? labelField : '' } }
+          }
+        }
+      });
+    };
+
+    createBarChart('/api/top_increases', 'chartTopIncreases', 'label', 'value', 'Top Increases');
+    createBarChart('/api/worktype_changes', 'chartWorktypeChanges', 'label', 'value', 'Work Type Changes');
+    createBarChart('/api/department_changes', 'chartDepartmentChanges', 'label', 'value', 'Department Changes');
+    createBarChart('/api/early_completion', 'chartEarlyCompletion', 'label', 'value', 'Early Completion');
+    createBarChart('/api/efficiency_change', 'chartEfficiencyChange', 'label', 'value', 'Efficiency Change');
+  </script>
+</body>
+</html>

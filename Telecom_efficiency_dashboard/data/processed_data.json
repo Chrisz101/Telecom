@@ -1,0 +1,167 @@
+[
+  {
+    "label": "CONNECTIVITY AND STRATEGIC INNOVATION",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "CORE ENGINEERING",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "CORE NETWORK ENGINEERING",
+    "change": -5.56,
+    "type": "department"
+  },
+  {
+    "label": "FO AL FIBER TO DISTRIBUTION",
+    "change": 0.65,
+    "type": "department"
+  },
+  {
+    "label": "FO AL LONG HAUL FIBER",
+    "change": -23.88,
+    "type": "department"
+  },
+  {
+    "label": "FO AL OPERATIONS",
+    "change": -27.78,
+    "type": "department"
+  },
+  {
+    "label": "FO GA LONG HAUL FIBER",
+    "change": -36.92,
+    "type": "department"
+  },
+  {
+    "label": "FO GA OPERATIONS",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "FO MS FIBER OPS AND PROJECTS",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "FO NE OPERATIONS",
+    "change": 40.0,
+    "type": "department"
+  },
+  {
+    "label": "FO NE-PROJECTS",
+    "change": -62.16,
+    "type": "department"
+  },
+  {
+    "label": "FO NW-PROJECTS & GENERATION",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "FO SE OPERATIONS",
+    "change": 3.85,
+    "type": "department"
+  },
+  {
+    "label": "FO SE-PROJECTS & NATIONAL",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "FO SW-PROJECTS",
+    "change": 16.67,
+    "type": "department"
+  },
+  {
+    "label": "IS PORTFOLIO",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "MSO-EPC OPERATIONS",
+    "change": 14.29,
+    "type": "department"
+  },
+  {
+    "label": "NETWORKING",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "NW RAN OPS",
+    "change": 2.47,
+    "type": "department"
+  },
+  {
+    "label": "RAN OPERATIONS",
+    "change": -7.36,
+    "type": "department"
+  },
+  {
+    "label": "RAN SUPERVISOR NW REGION",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "SE RAN OPS",
+    "change": -17.33,
+    "type": "department"
+  },
+  {
+    "label": "STI",
+    "change": -7.33,
+    "type": "department"
+  },
+  {
+    "label": "TECH INFRASTRUCTURE ENGRG",
+    "change": 3.24,
+    "type": "department"
+  },
+  {
+    "label": "TELECOM AGGREGATE SERVICES",
+    "change": 14.35,
+    "type": "department"
+  },
+  {
+    "label": "TELECOM CORE SERVICES",
+    "change": 2.43,
+    "type": "department"
+  },
+  {
+    "label": "TELECOM EDGE SERVICES",
+    "change": -1.94,
+    "type": "department"
+  },
+  {
+    "label": "TELECOM WIRELESS",
+    "change": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "Install",
+    "change": -7.63,
+    "type": "worktype"
+  },
+  {
+    "label": "Migrate",
+    "change": -31.47,
+    "type": "worktype"
+  },
+  {
+    "label": "Remove/Retire",
+    "change": -35.12,
+    "type": "worktype"
+  },
+  {
+    "label": "Repair",
+    "change": 16.7,
+    "type": "worktype"
+  },
+  {
+    "label": "Upgrade/Modify",
+    "change": 2.76,
+    "type": "worktype"
+  }
+]

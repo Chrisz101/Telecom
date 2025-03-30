@@ -1,0 +1,200 @@
+[
+  {
+    "label": "CONNECTIVITY AND STRATEGIC INNOVATION",
+    "2023": 0.0,
+    "2024": 100.0,
+    "type": "department"
+  },
+  {
+    "label": "CORE ENGINEERING",
+    "2023": 0.0,
+    "2024": 100.0,
+    "type": "department"
+  },
+  {
+    "label": "CORE NETWORK ENGINEERING",
+    "2023": 42.86,
+    "2024": 57.14,
+    "type": "department"
+  },
+  {
+    "label": "FO AL FIBER TO DISTRIBUTION",
+    "2023": 55.36,
+    "2024": 44.64,
+    "type": "department"
+  },
+  {
+    "label": "FO AL LONG HAUL FIBER",
+    "2023": 40.48,
+    "2024": 59.52,
+    "type": "department"
+  },
+  {
+    "label": "FO AL OPERATIONS",
+    "2023": 60.87,
+    "2024": 39.13,
+    "type": "department"
+  },
+  {
+    "label": "FO GA LONG HAUL FIBER",
+    "2023": 34.21,
+    "2024": 65.79,
+    "type": "department"
+  },
+  {
+    "label": "FO GA OPERATIONS",
+    "2023": 100.0,
+    "2024": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "FO MS FIBER OPS AND PROJECTS",
+    "2023": 100.0,
+    "2024": 0.0,
+    "type": "department"
+  },
+  {
+    "label": "FO NE OPERATIONS",
+    "2023": 16.67,
+    "2024": 83.33,
+    "type": "department"
+  },
+  {
+    "label": "FO NE-PROJECTS",
+    "2023": 7.5,
+    "2024": 92.5,
+    "type": "department"
+  },
+  {
+    "label": "FO NW-PROJECTS & GENERATION",
+    "2023": 0.0,
+    "2024": 100.0,
+    "type": "department"
+  },
+  {
+    "label": "FO SE OPERATIONS",
+    "2023": 13.33,
+    "2024": 86.67,
+    "type": "department"
+  },
+  {
+    "label": "FO SE-PROJECTS & NATIONAL",
+    "2023": 0.0,
+    "2024": 100.0,
+    "type": "department"
+  },
+  {
+    "label": "FO SW-PROJECTS",
+    "2023": 14.29,
+    "2024": 85.71,
+    "type": "department"
+  },
+  {
+    "label": "IS PORTFOLIO",
+    "2023": 0.0,
+    "2024": 100.0,
+    "type": "department"
+  },
+  {
+    "label": "MSO-EPC OPERATIONS",
+    "2023": 50.0,
+    "2024": 50.0,
+    "type": "department"
+  },
+  {
+    "label": "NETWORKING",
+    "2023": 0.0,
+    "2024": 100.0,
+    "type": "department"
+  },
+  {
+    "label": "NW RAN OPS",
+    "2023": 19.0,
+    "2024": 81.0,
+    "type": "department"
+  },
+  {
+    "label": "RAN OPERATIONS",
+    "2023": 41.1,
+    "2024": 58.9,
+    "type": "department"
+  },
+  {
+    "label": "RAN SUPERVISOR NW REGION",
+    "2023": 0.0,
+    "2024": 100.0,
+    "type": "department"
+  },
+  {
+    "label": "SE RAN OPS",
+    "2023": 77.32,
+    "2024": 22.68,
+    "type": "department"
+  },
+  {
+    "label": "STI",
+    "2023": 38.24,
+    "2024": 61.76,
+    "type": "department"
+  },
+  {
+    "label": "TECH INFRASTRUCTURE ENGRG",
+    "2023": 35.09,
+    "2024": 64.91,
+    "type": "department"
+  },
+  {
+    "label": "TELECOM AGGREGATE SERVICES",
+    "2023": 46.01,
+    "2024": 53.99,
+    "type": "department"
+  },
+  {
+    "label": "TELECOM CORE SERVICES",
+    "2023": 44.96,
+    "2024": 55.04,
+    "type": "department"
+  },
+  {
+    "label": "TELECOM EDGE SERVICES",
+    "2023": 55.56,
+    "2024": 44.44,
+    "type": "department"
+  },
+  {
+    "label": "TELECOM WIRELESS",
+    "2023": 0.0,
+    "2024": 100.0,
+    "type": "department"
+  },
+  {
+    "label": "Install",
+    "2023": 46.11,
+    "2024": 53.89,
+    "type": "worktype"
+  },
+  {
+    "label": "Migrate",
+    "2023": 61.17,
+    "2024": 38.83,
+    "type": "worktype"
+  },
+  {
+    "label": "Remove/Retire",
+    "2023": 16.24,
+    "2024": 83.76,
+    "type": "worktype"
+  },
+  {
+    "label": "Repair",
+    "2023": 53.11,
+    "2024": 46.89,
+    "type": "worktype"
+  },
+  {
+    "label": "Upgrade/Modify",
+    "2023": 45.19,
+    "2024": 54.81,
+    "type": "worktype"
+  }
+]

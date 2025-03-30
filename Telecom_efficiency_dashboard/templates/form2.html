@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Request Form 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
+            padding: 20px;
+        }
+        .form-container {
+            background: #fff;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #0f5b85;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #094766;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>🚚 Transport Request Form 2</h2>
+        <a href="{{ url_for('dashboard') }}">
+            <button style="margin-top: 20px;">Go to Dashboard</button>
+          </a>
+        <form action="/submit_form2" method="POST">
+            <label>Change ID: <input name="ChangeID"></label>
+            <label>Submitted By: <select name="SubmittedBy" id="submitter"></select></label>
+            <label>Request Type: <input name="RequestType"></label>
+            <label>Customer Department: <select name="CustomerDept" id="departments"></select></label>
+            <label>Coordinator: <select name="Coordinator" id="coordinator"></select></label>
+            <label>OpCat1: <select name="OpCat1" id="opcat1"></select></label>
+            <label>OpCat2: <select name="OpCat2" id="opcat2"></select></label>
+            <label>ProdCat1: <input name="ProdCat1"></label>
+            <label>ProdCat2: <select name="ProdCat2" id="prodcat2"></select></label>
+            <label>ProdCat3: <select name="ProdCat3" id="prodcat3"></select></label>
+            <label>Work Group: <input name="WorkGroup"></label>
+            <label>Assignment: <input name="Assignment"></label>
+            <label>Implementer: <input name="Implementer"></label>
+            <label>Status: <input name="Status"></label>
+            <label>Change Status: <input name="ChangeStatus"></label>
+            <label>Priority: <input name="Priority"></label>
+            <label>Impact: <input name="Impact"></label>
+            <label>Urgency: <input name="Urgency"></label>
+            <label>Schedule Type: <input name="ScheduleType"></label>
+            <label>Schedule Category: <input name="ScheduleCategory"></label>
+            <label>Scheduled Start DateTime: <input type="datetime-local" name="ScheduledStartDateTime"></label>
+            <label>Scheduled End DateTime: <input type="datetime-local" name="ScheduledEndDateTime"></label>
+            <label>Actual Start DateTime: <input type="datetime-local" name="ActualStartDateTime"></label>
+            <label>Actual End DateTime: <input type="datetime-local" name="ActualEndDateTime"></label>
+            <label>Completed DateTime: <input type="datetime-local" name="CompletedDateTime"></label>
+            <label>Implementation Status: <input name="ImplementationStatus"></label>
+            <label>Implementation Results: <textarea name="ImplementationResults"></textarea></label>
+            <label>Root Cause: <textarea name="RootCause"></textarea></label>
+            <label>Created Date: <input type="datetime-local" name="CreatedDate"></label>
+            <label>Created Month: <input name="CreatedMonth"></label>
+            <label>Notes: <textarea name="Notes"></textarea></label>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script>
+        const dropdowns = [
+            ['submitter', '/dropdown/submitter'],
+            ['coordinator', '/dropdown/coordinator'],
+            ['departments', '/dropdown/departments'],
+            ['opcat1', '/dropdown/opcat1'],
+            ['opcat2', '/dropdown/opcat2'],
+            ['prodcat2', '/dropdown/prodcat2'],
+            ['prodcat3', '/dropdown/prodcat3']
+        ];
+
+        dropdowns.forEach(([id, url]) => {
+            fetch(url).then(res => res.json()).then(options => {
+                const select = document.getElementById(id);
+                select.innerHTML = '<option value="">Select...</option>' +
+                    options.map(o => `<option value="${o}">${o}</option>`).join('');
+                new Choices(select, { searchEnabled: true });
+            });
+        });
+    </script>
+</body>
+</html>
