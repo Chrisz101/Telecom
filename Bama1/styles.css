@@ -1,0 +1,311 @@
+/* 
+  Southern Company Dashboard CSS
+  Based on paper designs from sketches
+*/
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #8B4513;
+    margin-bottom: 20px;
+}
+
+/* Update these CSS styles */
+.company-logo {
+    height: 30px; /* Reduced from 40px */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 15px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header h2 {
+    color: #555;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px; /* Add this to keep text proportional to logo */
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #8B4513;
+    margin-right: 15px;
+}
+
+.header h2 {
+    color: #8B4513;
+    margin: 0;
+    font-weight: 600;
+}
+
+.date-range {
+    display: flex;
+    align-items: center;
+}
+
+    .date-range select {
+        margin-left: 10px;
+        padding: 5px;
+        border: 1px solid #8B4513;
+        border-radius: 4px;
+    }
+
+/* Metrics banner */
+.metrics-banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.metric {
+    text-align: center;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.metric-number {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B4513;
+}
+
+.metric-label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* File input styling */
+.file-input-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.file-input-label {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+    .file-input-label:hover {
+        background-color: #A0522D;
+    }
+
+#fileInput {
+    display: none;
+}
+
+.message-area {
+    background-color: #e8f4f8;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+    .message-area.error {
+        background-color: #f8e8e8;
+        color: #d32f2f;
+    }
+
+/* Tabs styling */
+.tabs-section {
+    margin: 20px 0;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+    .tab-button:hover {
+        background-color: #e0e0e0;
+    }
+
+    .tab-button.active {
+        background-color: #8B4513;
+        color: white;
+    }
+
+/* Content areas */
+.tab-content {
+    display: none;
+    padding: 20px 0;
+}
+
+    .tab-content.active {
+        display: block;
+    }
+
+/* Controls styling */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.control-group {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+    .control-group label {
+        margin-right: 10px;
+        font-weight: 500;
+    }
+
+    .control-group select,
+    .control-group input {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+/* Chart containers */
+.chart-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: auto;
+}
+
+/* Two-column layout for workload tab */
+.two-column-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Table styling */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+    .summary-table th,
+    .summary-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .summary-table th {
+        background-color: #8B4513;
+        color: white;
+    }
+
+    .summary-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .summary-table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Explanation boxes */
+.explanation {
+    background-color: #f9f9f9;
+    border-left: 4px solid #8B4513;
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+    .explanation h4 {
+        margin-top: 0;
+        color: #8B4513;
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .metrics-banner {
+        flex-direction: column;
+    }
+
+    .metric {
+        margin-bottom: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date-range {
+        margin-top: 10px;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .control-group {
+        width: 100%;
+        margin-right: 0;
+    }
+}

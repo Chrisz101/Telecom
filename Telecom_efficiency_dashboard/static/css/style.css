@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f6f8;
@@ -18,3 +19,25 @@ h1 {
     text-align: center;
     margin-bottom: 40px;
 }
+=======
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    padding: 40px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+>>>>>>> a095f20 (Added all local project folders to GitHub repo)

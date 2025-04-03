@@ -211,3 +211,4 @@ def api_data():
 # ----------------- APP LAUNCH -----------------
 if __name__ == '__main__':
     app.run(debug=True)
+

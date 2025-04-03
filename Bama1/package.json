@@ -1,0 +1,13 @@
+{
+  "name": "bama",
+  "version": "0.0.0",
+  "description": "Bama",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
+  },
+  "eslintConfig": {}
+}

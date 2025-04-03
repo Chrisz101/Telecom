@@ -1,0 +1,3 @@
+C:\Users\tomhe\source\repos\Bama\obj\Debug\Bama.njsproj.AssemblyReference.cache
+C:\Users\tomhe\source\repos\Bama\obj\Debug\Bama.njsproj.CoreCompileInputs.cache
+C:\Users\tomhe\source\repos\Bama\bin\Microsoft.NodejsTools.WebRole.dll
