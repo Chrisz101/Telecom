@@ -1,1 +1,61 @@
+-- Create the database
+CREATE DATABASE SouthernCompanyDB;
+GO
+
+-- Use the database
+USE SouthernCompanyDB;
+GO
+
+-- Create the table
+CREATE TABLE TransportForm2 (
+    ChangeID NVARCHAR(100) PRIMARY KEY,
+    Summary NVARCHAR(MAX),
+    Priority NVARCHAR(50),
+    StatusReason NVARCHAR(100),
+    Impact NVARCHAR(100),
+    ChangePlanning NVARCHAR(MAX),
+    Submitter NVARCHAR(100),
+    Coordinator NVARCHAR(100),
+    SubmitDateTime DATETIME,
+    SchStartDateTime DATETIME,
+    SchEndDateTime DATETIME,
+    ActualStartDateTime DATETIME,
+    ActualEndDateTime DATETIME,
+    CompletedDateTime DATETIME,
+    ClosedDateTime DATETIME,
+    CompletedYear INT,
+    CompletedMonth NVARCHAR(50),
+    ChangeSuccess NVARCHAR(50),
+    ProdCat2 NVARCHAR(100),
+    ProdCat3 NVARCHAR(100),
+    OpCat1 NVARCHAR(100),
+    OpCat2 NVARCHAR(100),
+    Customer NVARCHAR(100),
+    CustomerOpco NVARCHAR(100),
+    CustomerGroup NVARCHAR(100),
+    CustomerDept NVARCHAR(100),
+    ApprovalDateTime DATETIME,
+    SchForAppDateTime DATETIME,
+    ImpInProgDateTime DATETIME,
+    LastModifiedDate DATETIME,
+    CompletedYearQtr NVARCHAR(50),
+    ClosedMonth NVARCHAR(50),
+    ClosedYearQtr NVARCHAR(50),
+
+    -- Extra fields for demo-filling (not present in Excel)
+    RequestType NVARCHAR(100),
+    ProdCat1 NVARCHAR(100),
+    WorkGroup NVARCHAR(100),
+    Assignment NVARCHAR(100),
+    Implementer NVARCHAR(100),
+    ChangeStatus NVARCHAR(100),
+    Urgency NVARCHAR(50),
+    ScheduleType NVARCHAR(100),
+    ScheduleCategory NVARCHAR(100),
+    ImplementationStatus NVARCHAR(100),
+    RootCause NVARCHAR(255),
+    CreatedDate DATETIME,
+    CreatedMonth NVARCHAR(50),
+    Notes NVARCHAR(MAX)
+);
 
